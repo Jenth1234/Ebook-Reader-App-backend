@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".auth.SignUpActivity">
+
+    <ImageView
+        android:id="@+id/iconBAck"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/icon_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="150dp"
+        android:text="Đăng kí"
+        android:textColor="#232323"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_white_border_medium_orange_color"
+        android:hint="Email"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="10dp"
+        android:textColor="#232323"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/textLogin" />
+
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/bg_white_border_medium_orange_color"
+        android:hint="@string/password"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="10dp"
+        android:textColor="#232323"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/inputEmail" />
+
+    <EditText
+        android:id="@+id/inputName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/bg_white_border_medium_orange_color"
+        android:hint="Tên của bạn"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="10dp"
+        android:textColor="#232323"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/inputPassword" />
+
+    <EditText
+        android:id="@+id/inputPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/bg_white_border_medium_orange_color"
+        android:hint="+84"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="10dp"
+        android:textColor="#232323"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/inputName" />
+
+<!--    <EditText-->
+<!--        android:id="@+id/inputAccount"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginHorizontal="16dp"-->
+<!--        android:layout_marginTop="7dp"-->
+<!--        android:background="@drawable/bg_white_border_medium_orange_color"-->
+<!--        android:hint="Account"-->
+<!--        android:paddingHorizontal="16dp"-->
+<!--        android:paddingVertical="10dp"-->
+<!--        android:textColor="#232323"-->
+<!--        android:textSize="14sp"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/inputPhoneNumber" />-->
+
+    <TextView
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_orange_gradient_border_medium"
+        android:gravity="center"
+        android:paddingVertical="15dp"
+        android:text="Đăng kí"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/inputPhoneNumber"/>
+
+
+    <TextView
+        android:id="@+id/textOr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Hoặc"
+        android:textColor="#232323"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonLogin" />
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:background="#232323"
+        app:layout_constraintBottom_toBottomOf="@id/textOr"
+        app:layout_constraintEnd_toStartOf="@id/textOr"
+        app:layout_constraintTop_toTopOf="@id/textOr" />
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:background="#232323"
+        app:layout_constraintBottom_toBottomOf="@id/textOr"
+        app:layout_constraintStart_toEndOf="@id/textOr"
+        app:layout_constraintTop_toTopOf="@id/textOr" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/containerIconFB"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textOr">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_fb" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/containerIconFB"
+        app:layout_constraintStart_toEndOf="@id/containerIconFB"
+        app:layout_constraintTop_toTopOf="@id/containerIconFB">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_tt" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/containerIconFB"
+        app:layout_constraintEnd_toStartOf="@id/containerIconFB"
+        app:layout_constraintTop_toTopOf="@id/containerIconFB">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_ig" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
